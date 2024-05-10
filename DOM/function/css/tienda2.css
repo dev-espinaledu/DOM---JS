@@ -1,0 +1,103 @@
+/* body */
+body{
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  /* header */
+  header{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+  }
+  /* logo de adidas */
+  .logo{
+    width: 120px;
+    height: 120px;
+  }
+  /* nav */
+  nav{
+    padding-top: 100px;
+    padding-right: 20px;
+    float: right;
+  }
+  /* texto del nav */
+  nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 2px;
+  }
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  /* Ajustar el número de artículos por línea */
+  @media (min-width: 800px) { /* 4 elementos por línea */
+    main{
+      justify-content: space-around;
+    }
+    main > *{
+      width: calc(25% - 20px);
+      margin: 10px;
+    }
+  /* zapatos */
+    .shoe{
+      background-color: rgb(249, 249, 249);
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+  }
+  /* imágenes de los zapatos */
+  .shoe img {
+    max-width: 100%;
+  }
+  /* botón de compra */
+  .buy-btn{
+    background-color: rgb(154, 154, 155);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  /* aside para los productos en el carrito */
+  aside{
+    background-color: rgb(242, 242, 242);
+    padding: 20px;
+    width: 200px;
+    margin: 0 auto;
+    position: absolute;
+    top: 166px;
+    right: 0px;
+    display: none;
+  }
+  /* para que el aside del carrito aparezca y desaparezca */
+  aside.show{
+    display: block;
+  }
+  /* lista de los productos en el carrito */
+  #cart-list{
+    list-style-type: none;
+    padding: 0;
+  }
+  #cart-list li{
+    padding: 10px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+  }
+  /* precio total de los productos */
+  #cart-total {
+    font-weight: bold;
+    }
+  }
+  /* footer */
+  footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }

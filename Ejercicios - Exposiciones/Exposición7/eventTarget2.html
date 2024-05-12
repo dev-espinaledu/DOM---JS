@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event.Target 2</title>
+    <style>
+        table {
+            border: 1px solid black;
+        }
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Según el tipo de elemento (event.target.tagName) u otras propiedades del elemento de destino, puede adaptar el comportamiento dentro del manejador de eventos.. -->
+    <h1>Manejo Condicional de Eventos</h1>
+
+    <table>
+        <tr>
+            <td><input type="checkbox"> Etiqueta 1</td>
+        </tr>
+        <tr>
+            <td><a href="#">Enlace 1</a></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"> Etiqueta 2</td>
+        </tr>
+        <tr>
+            <td><a href="#">Enlace 2</a></td>
+        </tr>
+    </table>
+
+    <script src="eventTarget2.js"></script>
+</body>
+</html>

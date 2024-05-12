@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>local Storage 2</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .tema-claro {
+      background-color: #fff;
+      color: #333;
+    }
+
+    .tema-oscuro {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Seleccionar tema</h1>
+
+  <form id="formulario">
+    <label for="tema">Tema:</label>
+    <select id="tema" name="tema">
+      <option value="claro">Claro</option>
+      <option value="oscuro">Oscuro</option>
+    </select>
+
+    <button type="submit">Guardar</button>
+  </form>
+
+  <script src="localStorage2.js"></script>
+</body>
+</html>
